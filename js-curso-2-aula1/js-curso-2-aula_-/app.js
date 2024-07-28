@@ -17,7 +17,7 @@ function exibirTextoNaTela(tag,texto){
 
     function ExibirMensagemInicial() {
         exibirTextoNaTela('h1', 'Jogo do Número Secreto');
-        exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+        exibirTextoNaTela('p', 'Escolha um número entre 1 e 50');
     }
     
     ExibirMensagemInicial();
@@ -36,10 +36,10 @@ function verificarChute(){
     }else{
         if(chute > numeroSecreto){
             exibirTextoNaTela('h1', 'O número secreto é menor');
-            exibirTextoNaTela('p', 'Escolha outro número entre 1 e 10');
+            exibirTextoNaTela('p', 'Escolha outro número entre 1 e 50');
         }else{
             exibirTextoNaTela('h1', 'O número secreto é maior');
-            exibirTextoNaTela('p', 'Escolha outro número entre 1 e 10');
+            exibirTextoNaTela('p', 'Escolha outro número entre 1 e 50');
         }
         tentativas++;
         limparCampo();
